@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import signUpImg from '../images/signup.jpg';
 
 export default function SignUp() {
     return (
-        <div className="container cont" style={{ maxWidth: '700px', marginTop: '100px' }}>
+        <div className="container cont" style={{ maxWidth: '700px', marginTop: '100px', marginBottom: '100px' }}>
             <div className="row px-5 pt-5  pb-3">
                 <div className="col">
                     <h2 className="h2">SignUp</h2>
@@ -33,8 +34,8 @@ export default function SignUp() {
                         <button type="submit" class="btn btn-primary d-grid gap-2 col-12">Submit</button>
                     </form>
                 </div>
-                <div className="col-md-6">
-                    this is image side
+                <div className="col-md-6 d-flex justify-content-center">
+                    <img className="d-flex align-item-center  mt-4  mt-md-4 mb-5 mb-md-0" style={{maxWidth: '230px', height:'200px'}} src={signUpImg} alt="signUpImg"/>
                 </div>
             </div>
         </div>
