@@ -1,5 +1,5 @@
 
-import './App.css';
+import './style.css';
 import Home from './components/Home';
 import About from './components/About';
 import SignUp from './components/SignUp';
