@@ -20,12 +20,14 @@ export default function Navbar() {
                             <NavLink className="nav-link" exact to='/about'>About</NavLink>
                         </li>
                         <li className="nav-item">
+                            <NavLink className="nav-link" exact to='/contact'>Contact</NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink className="nav-link" exact to='/sign-up'>SignUp</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" exact to='/sign-in'>SignIn</NavLink>
                         </li>
-                        
                        
                     </ul>
 
