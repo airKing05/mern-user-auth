@@ -19,7 +19,7 @@ export default function SignUp() {
                             <input type="email" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Enter Email"/>
                         </div>
                         <div class="mb-3"> 
-                            <input type="text" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Contact Number"/>
+                            <input type="number" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Contact Number"/>
                         </div>
                         <div class="mb-3"> 
                             <input type="text" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Profession"/>
