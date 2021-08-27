@@ -31,3 +31,6 @@ body{
 .h7{
     font-weight: 500;
 }
+.middle{
+    margin: 0px auto !important;
+}
