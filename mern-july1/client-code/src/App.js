@@ -7,6 +7,7 @@ import Signin from './components/Signin';
 import Navbar from './components/Navbar';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Contact from './components/Contact';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path = '/contact' component ={Contact}/>
         <Route path = '/sign-up' component ={SignUp}/>
         <Route path = '/sign-in' component ={Signin} />
+        <Route component={NotFound}/>
       </Switch>
     </BrowserRouter>
   );
