@@ -6,9 +6,9 @@ export default function Home() {
             <div className="row">
                 <div className="col-6" style={{background: 'gray', height: '100vh'}}></div>
                 <div className="col-6" style={{background: 'darkgray'}}></div>
-                <div className="middle" style={{position:'absolute', top:'45%', margin: '10px auto'}}>
-                <h4 className="middle" >Welcome visitors</h4>
-                <h3 className="middle">this is website is for user authentication</h3>
+                <div className="container middle" style={{position:'absolute', top:'50%', margin: '10px auto'}}>
+                <h4 className=" row middle d-flex justify-content-center " style={{position:'relative', top:'0px', }}>Welcome visitors</h4>
+                <h3 className=" row middle d-flex justify-content-center " style={{position:'relative', top:'0px', }}>this is website is for user authentication</h3>
                 </div>
             </div>
         </div>
