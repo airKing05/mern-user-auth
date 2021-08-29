@@ -13,22 +13,22 @@ export default function SignUp() {
                 <div className="col-md-6">
                     <form>
                         <div class="mb-3 "> 
-                            <input type="text" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" />
+                            <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" />
                         </div>
                         <div class="mb-3"> 
-                            <input type="email" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Enter Email"/>
+                            <input type="email" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Enter Email"/>
                         </div>
                         <div class="mb-3"> 
-                            <input type="number" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Contact Number"/>
+                            <input type="number" class="form-control border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Contact Number"/>
                         </div>
                         <div class="mb-3"> 
-                            <input type="text" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Profession"/>
+                            <input type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Profession"/>
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputPassword1" placeholder="Password" />
+                            <input type="password" class="form-control border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputPassword1" placeholder="Password" />
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control border border-4 border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputPassword1" placeholder="Confirm Password" />
+                            <input type="password" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0  border-dark" id="exampleInputPassword1" placeholder="Confirm Password" />
                         </div>
                         
                         <button type="submit" class="btn btn-primary d-grid gap-2 col-12">Submit</button>

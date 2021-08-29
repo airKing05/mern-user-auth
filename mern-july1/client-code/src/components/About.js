@@ -20,22 +20,22 @@ export default function About() {
                         <div  style={{borderBottom: '2px solid black', maxWidth: '50px'}}></div>
                     </form>
                 </div>
-                <div className="row">
+                
                     <div className="col-md-2">
                         <form className="align-self-end ">
-                            <input type="submit" name="btn" className="btn px-3" value="Edit" />
+                            <input type="submit" name="btn " className="btn btn-secondary" value="Edit" />
                         </form>
                     </div>
-                </div>
+               
             </div>
             <div className="row">
                 <div className="col-md-4">
                     <h5 style={{ borderBottom: '2px solid black' }}>Work</h5>
-                    <a rel="noreferrer" target="_blank" href="https://www.youtube.com/">Youtube</a> <br /><br />
-                    <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/anilrajmeena.meena/">Facebook</a> <br /><br />
-                    <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/anilraj-meena/">LinkedIn</a> <br /><br />
-                    <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/ANILRAJMEENA2">Twitter</a> <br /><br />
-                    <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/anilraj_bundi/">Instagram</a> <br /><br />
+                    <a rel="noreferrer" target="_blank" href="https://www.youtube.com/" style={{ textDecoration: 'none' }}>Youtube</a> <br /><br />
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/anilrajmeena.meena/" style={{ textDecoration: 'none' }}>Facebook</a> <br /><br />
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/anilraj-meena/" style={{ textDecoration: 'none' }}>LinkedIn</a> <br /><br />
+                    <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/ANILRAJMEENA2" style={{ textDecoration: 'none' }}>Twitter</a> <br /><br />
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/anilraj_bundi/" style={{ textDecoration: 'none' }}>Instagram</a> <br /><br />
                 </div>
                 <div className="col-md-8">
                     <div className="tab-content profile-tab" id="myTabContent">
