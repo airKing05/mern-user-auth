@@ -3,7 +3,7 @@ import userImage from '../images/userImage.png'
 
 export default function About() {
     return (
-        <div className="container cont" style={{ maxWidth: '700px', marginTop: '100px', marginBottom: '100px' }}>
+        <div className="container cont " style={{ maxWidth: '700px', marginTop: '100px', marginBottom: '100px' }}>
             <div className="row py-3">
                 <div className=" col-md-4">
                     <img src={userImage} className="img-fluid img-thumbnail" alt="user-img" style={{ maxWidth: '200px', height: 'auto' }} />
@@ -22,7 +22,7 @@ export default function About() {
                 </div>
                 
                     <div className="col-md-2">
-                        <form className="align-self-end ">
+                        <form className=" d-flex justify-content-end">
                             <input type="submit" name="btn " className="btn btn-secondary" value="Edit" />
                         </form>
                     </div>
