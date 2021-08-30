@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom';
 import signUpImg from '../images/signup.jpg';
 
 export default function SignUp() {
-    const history = useHistory(); 
+    const history = useHistory();
     const [user, setUser] = useState({
         name : "",
         email: "",
@@ -17,7 +17,7 @@ export default function SignUp() {
     let name, value;
     const handelInput = (e) => {
         //  console.log(e)
-          name = e.target.name; 
+          name = e.target.name;
           value = e.target.value;
 
           setUser({ ...user , [name]: value})
@@ -34,7 +34,7 @@ export default function SignUp() {
                 "content-Type": "application/json"
             },
             body: JSON.stringify({
-                name, email, phone, work, password, cpassword
+                name, email, phone, work, password, cpassword       //name(property of db): name(field data value)
             })
         });
 
@@ -62,26 +62,26 @@ export default function SignUp() {
             <div className="row px-5 pb-4">
                 <div className="col-md-6">
                     <form method = "POST">
-                        <div className="mb-3 form-group"> 
-                            <input type="text" className="form-control border-top-0 border-left-0 border-right-0 rounded-0  border-dark" autoComplete="off" id="name" 
+                        <div className="mb-3 form-group">
+                            <input type="text" className="form-control border-top-0 border-left-0 border-right-0 rounded-0  border-dark" autoComplete="off" id="name"
                             name="name"
                             value={user.name}
                             onChange={handelInput} placeholder="Enter Name" />
                         </div>
-                        <div className="mb-3 form-group"> 
+                        <div className="mb-3 form-group">
                             <input type="email" className="form-control  border-top-0 border-left-0 border-right-0 rounded-0  border-dark" autoComplete="off" id="email"
-                            name="email" 
+                            name="email"
                             value={user.email}
                             onChange={handelInput}  placeholder="Enter Email"/>
                         </div>
-                        <div className="mb-3 form-group"> 
+                        <div className="mb-3 form-group">
                             <input type="number" className="form-control border-top-0 border-left-0 border-right-0 rounded-0  border-dark" autoComplete="off" id="phone"
-                            name="phone" 
+                            name="phone"
                             value={user.phone}
                             onChange={handelInput} placeholder="Enter Contact Number"/>
                         </div>
-                        <div className="mb-3 form-group"> 
-                            <input type="text" className="form-control  border-top-0 border-left-0 border-right-0 rounded-0  border-dark" autoComplete="off" id="work" 
+                        <div className="mb-3 form-group">
+                            <input type="text" className="form-control  border-top-0 border-left-0 border-right-0 rounded-0  border-dark" autoComplete="off" id="work"
                             name="work"
                             value={user.work}
                             onChange={handelInput} placeholder="Your Profession"/>
@@ -94,11 +94,11 @@ export default function SignUp() {
                         </div>
                         <div className="mb-3 form-group">
                             <input type="password" className="form-control  border-top-0 border-left-0 border-right-0 rounded-0  border-dark" autoComplete="off" id="cpassword"
-                            name="cpassword" 
+                            name="cpassword"
                             value={user.cpassword}
                             onChange={handelInput} placeholder="Confirm Password" />
                         </div>
-                        
+
                         <button type="submit" className="btn btn-primary d-grid gap-2 col-12"
                         onClick={sendInputData}>Submit</button>
                     </form>
