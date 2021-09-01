@@ -107,7 +107,7 @@ router.post("/signin", async (req, res) => {
       // jwt token
       const token = await userLogin.generateAuthToken();
 
-      res.cookie("jwttoken", token, {
+      res.cookie("jwtoken", token, {
         expires : new Date(Date.now()+25892000000),          // after 30 days
         httpOnly: true
       });
@@ -135,9 +135,10 @@ router.post("/signin", async (req, res) => {
 
 // about us page .........................................................................
 
+
 router.get('/about', authenticate, (req, res) => {
-    console.log(`hello in about page`);
-    res.send(req.rootUser)
+        res.send('hello world from server side');
+        res.send(req.rootUser)
 })
 
 

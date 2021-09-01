@@ -39,7 +39,7 @@ app.use(require('./router/auth'))
     
 // })
 
-app.get('/contact', (req, res)=>{
+app.get('/contact', (req, res) => {
     res.send(`hellow world from contactus side`)
     res.cookie("jwt", "contact token")
 })
