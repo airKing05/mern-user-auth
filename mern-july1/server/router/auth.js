@@ -79,7 +79,7 @@ router.post("/register", async (req, res) => {
 
   } catch (err) {
     console.log("ERROR");
-    console.log(err);
+    console.log("sign up  error", err);
   }
 });
 
@@ -112,7 +112,7 @@ router.post("/signin", async (req, res) => {
         httpOnly: true
       });
       
-      console.log(token);
+      //console.log(token);
 
       if(!isMatch){
         res.status(400).json({err: 'invalid pass'})
@@ -124,7 +124,7 @@ router.post("/signin", async (req, res) => {
      
     }
   } catch (err) {
-    console.log(err);
+    console.log("sign in error", err);
   }
 });
 

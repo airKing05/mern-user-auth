@@ -1,11 +1,10 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const cookiesParser = require('cookie-parser');
 //const User = require('./models/userSchema');
 // const authenticate = require('./middleware/authenticate');
 
 const app = express();
-
-
 
 
 // .env file, to hide persnol info - port number, and database id Password
@@ -19,6 +18,7 @@ require('./models/userSchema');
 
 // middleware to understood json formate data to our application
 app.use(express.json());
+app.use(cookiesParser());
 
 // middleware to restrict partcular file for authetication
 // const middleware = (req, res, next)=>{
@@ -29,15 +29,6 @@ app.use(express.json());
 // linking router file 
 app.use(require('./router/auth'))
 
-// app.get('/', (req, res)=>{
-//     res.send(`hellow world from serever side`)
-// })
-
-// app.get('/about', middleware, (req, res)=>{
-//     res.send(`hello world from in about  side`)
-//     console.log('this is middleware in about');
-    
-// })
 
 app.get('/contact', (req, res) => {
     res.send(`hellow world from contactus side`)

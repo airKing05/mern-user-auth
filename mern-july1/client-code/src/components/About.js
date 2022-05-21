@@ -15,17 +15,15 @@ export default function About() {
                 },
                 credentials: "include"
             });
-    
             const data = await res.json();
             console.log(data)
-
             if(! res.status === 200){
                 const error = new Error(res.error);
                 throw error;
             }
         }
         catch(err){
-            console.log(err)
+            console.log("error from fe:", err)
             history.push('/signin');
         }
     };
