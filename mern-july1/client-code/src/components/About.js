@@ -16,7 +16,7 @@ export default function About() {
                 credentials: "include"
             });
     
-            const data =await res.json();
+            const data = await res.json();
             console.log(data)
 
             if(! res.status === 200){
@@ -26,7 +26,7 @@ export default function About() {
         }
         catch(err){
             console.log(err)
-            history.push('/login');
+            history.push('/signin');
         }
     };
 

@@ -137,6 +137,7 @@ router.post("/signin", async (req, res) => {
 
 
 router.get('/about', authenticate, (req, res) => {
+  // console.log(Authenticate.token)
         res.send('hello world from server side');
         res.send(req.rootUser)
 })

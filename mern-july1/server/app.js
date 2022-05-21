@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
-
-// const User = require('./models/userSchema');
+//const User = require('./models/userSchema');
+// const authenticate = require('./middleware/authenticate');
 
 const app = express();
 
@@ -34,7 +34,7 @@ app.use(require('./router/auth'))
 // })
 
 // app.get('/about', middleware, (req, res)=>{
-//     res.send(`hellow world from in abnout  side`)
+//     res.send(`hello world from in about  side`)
 //     console.log('this is middleware in about');
     
 // })
