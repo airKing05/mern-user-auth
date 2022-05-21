@@ -1,9 +1,37 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import phoneImg from '../images/phone2.png';
 import mailImg from '../images/mail.png';
 import addressImg from '../images/address.png';
 
 export default function Contact() {
+    const [contactData, setContactData] = useState({})
+
+    const callContactPage = async () => {
+        try {
+            const res = await fetch('/getData', {           //this res is backend response , not from call back function
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            const data = await res.json();
+            setContactData(data)
+            console.log("contact page data", data)
+
+            if (!res.status === 200) {
+                const error = new Error(res.error);
+                throw error;
+                console.log("contact page error from FE", error)
+            }
+        }
+        catch (err) {
+            console.log("error from fe:", err)
+        }
+    };
+
+    useEffect(() => {
+        callContactPage()
+    }, [])
     return (
         <div>
             <div className="container mt-5 ">

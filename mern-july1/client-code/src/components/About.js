@@ -19,6 +19,7 @@ export default function About() {
             console.log(data)
             if(! res.status === 200){
                 const error = new Error(res.error);
+                console.log("contact page error from FE", error)
                 throw error;
             }
         }

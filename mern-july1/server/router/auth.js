@@ -133,13 +133,22 @@ router.post("/signin", async (req, res) => {
 
 
 
-// about us page .........................................................................
+// about me page .........................................................................
 
 
 router.get('/about', authenticate, (req, res) => {
   // console.log(Authenticate.token)
         res.send('hello world from server side');
         res.send(req.rootUser)
+})
+
+
+
+// contact us page and home page to get data.........................................................................
+router.get('/getData', authenticate, (req, res) => {
+  // console.log(Authenticate.token)
+  res.send('hello world from server side');
+  res.send(req.rootUser)
 })
 
 
