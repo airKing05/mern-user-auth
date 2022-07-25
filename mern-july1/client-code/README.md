@@ -59,7 +59,7 @@ This MERN app works across all devices.
 
 - If no Error occur
 
-[App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%204.49.27%20PM.png?raw=true)
+![App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%204.49.27%20PM.png?raw=true)
 
 - Enter Your Email and Password
 
