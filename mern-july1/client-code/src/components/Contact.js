@@ -54,7 +54,7 @@ export default function Contact() {
                             </div>
                             <div className="col-9 sm-col">
                                 <span className="h7 d-block">Mail</span>
-                                <label style={{ color: 'blue' }}>vision@gmail.com</label>
+                                <label style={{ color: 'blue' }}>mernAuth@gmail.com</label>
                             </div>
                         </div>
                     </div>

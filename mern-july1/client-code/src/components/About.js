@@ -30,7 +30,7 @@ export default function About() {
     };
 
     useEffect(() => {
-        callAboutPage()
+      //  callAboutPage()
     }, [])
 
     return (
@@ -41,7 +41,7 @@ export default function About() {
                 </div>
                 <div className=" col-md-6">
                     <form method="GET"> 
-                        <h4>Anilraj</h4>
+                        <h4>Iron man</h4>
                         <h5 style={{ color: 'blue', }}>Web developer</h5>
                         <h6 className="my-4">Rating : <span style={{ fontSize: '11px', fontWeight: 500 }}>4/5</span></h6>
                         <nav class="nav mt-5 " role="tablist">
@@ -84,7 +84,7 @@ export default function About() {
                                     <label>Name</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <p>ANIL RAJ </p>
+                                    <p>TONY </p>
                                 </div>
                             </div>
                             <div className="row ">
@@ -92,7 +92,7 @@ export default function About() {
                                     <label>Surname</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <p>MEENA</p>
+                                    <p>STARK</p>
                                 </div>
                             </div>
                             <div className="row ">
