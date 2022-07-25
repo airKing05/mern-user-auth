@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# MERN USER AUTH App 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+mern-user-auth App is built with latest development tools.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+ - ReactJs is use to develop the ui part.
+ - Fully responsive web page.
+ - JSON data get from **MongoDb Atlas**.
+ - Bootstrap is use to enhance it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This MERN app works across all devices.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Some feature 
+ - This is APP follow functional base react architecture.
+ - This is **User Authentication** application.
+ - User Schema to providing the object based Data structure to store the user information.
+ 
+ ## Initial Authentication
 
-### `npm test`
+ - While SignUp it will authorize your email and number
+ - you can not enter any thing in email input box, it should be proper email id
+ - same for the mobile number
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ ## secondary Authentication
 
-### `npm run build`
+ - you can not sign in with out sign up.
+ - you have to enter you email and password that you used while sign up 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ## Tertiary Authentication
+ - you can not go to about page & contact 
+ - About page is store each user information, so you can check your profile only.
+ - **JSON-WEB-TOKEN** is use to store user information into **cookies**.
+ - it will generated JWT-Token while user sign-up, and store along with user information.
+ - validate for 30 days.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ ## Security 
+ - This web page is filly secure.
+ - Hacker can not access your ID and password easily
+ - Password is provide here by the **bcrypt** library.
+ 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ # Some Ui feature 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - You can sign-up here with your basic information.
+ - Can you can get you information in **about**.
+ - If you have any issues or suggestion related to the web-page, so can interact with us through **contact page**
+ 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Screenshots
+#### Sign Up Page
 
-## Learn More
+- Enter you basic information
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%204.44.43%20PM.png?raw=true)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- If no Error occur
 
-### Code Splitting
+[App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%204.49.27%20PM.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Enter Your Email and Password
 
-### Analyzing the Bundle Size
+![App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%204.51.11%20PM.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Mobile Views
 
-### Making a Progressive Web App
+- If Email and Password and correct
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%204.57.02%20PM.png?raw=true)
 
-### Advanced Configuration
+- If Sign In successfully will redirect to home
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%204.58.30%20PM.png?raw=true)
 
-### Deployment
+#### Full size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- If you are a True User
 
-### `npm run build` fails to minify
+![App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%205.01.40%20PM.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- contact for quarry or suggestion
+
+![App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%205.03.28%20PM.png?raw=true)
+
+- Write your quarry in quarry section
+![App Screenshot](https://github.com/airKing05/mern-user-auth/blob/auth/mern-july1/client-code/screeShot/Screenshot%202022-07-25%20at%205.04.46%20PM.png?raw=true)
+
+
+
+
+## API Reference
+
+#### Get all items
+API in MongoDB Atlas
+
+Get Api from  http://localhost:5000/user
+
+
+user api data look like
+```bash
+        _id: 62de7c0a3d19f9ac1c348d9a
+        name: "iron man"
+        email: "iroxxxxx3@gmail.com"
+        phone: 98*******0
+        work: "web developer"
+        password: "$2b$12$DPnjBcIs8yrR3QRNoK.R5eN8HMrTIoGGGjQIomHFWzyEpSf6AZ43u"
+        cpassword: "$2b$12$WkpOKe/R.WDXcViezpi/b.Z8Tft4knooYqrUKVXX/mXmqpae/ivyy"
+        tokens: Array
+        __v:0
+
+```
+
+
+
+## Tech Stack
+
+**Client:** React, BootStrap, CSS
+
+**Server:** NodeJs, ExpressJs
+
+**DataBase:** MongoDB Atlas
+
+
+## Installation
+
+GitHub Repository of MERN USER AUTH App
+```bash
+https://github.com/airKing05/mern-user-auth.git
+```
+
+Install my-project with npm
+```bash
+  npm install my-project
+  cd my-project
+```
+
+### Database
+
+To store the data connect the application with MongoDb Atlas 
+
+- create account in mongoDb Atlas.
+- create cluster 
+- Go to **server>db>conn.js**
+- add your cluster/ collection information into url, like your password and collection name
+- also add port number to- **server>app.js**, line number **listion()** function 
+- or you can create your **config.env** file
