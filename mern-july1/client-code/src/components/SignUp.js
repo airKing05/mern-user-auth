@@ -17,10 +17,10 @@ export default function SignUp() {
     let name, value;
     const handelInput = (e) => {
         //  console.log(e)
-          name = e.target.name;
-          value = e.target.value;
+          name = e.target.name;   // targeting the attribute of each input 
+          value = e.target.value;  // targeting the value of each field
 
-          setUser({ ...user , [name]: value})
+          setUser({ ...user , [name]: value}) // [name]; means name value will be change dynamically change
     };
 
     const sendInputData = async (e) => {

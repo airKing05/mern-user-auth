@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const authenticate = require('../middleware/authenticate');
 
 require("../db/conn");
 const User = require("../models/userSchema");
@@ -78,7 +79,7 @@ router.post("/register", async (req, res) => {
 
   } catch (err) {
     console.log("ERROR");
-    console.log(err);
+    console.log("sign up  error", err);
   }
 });
 
@@ -106,12 +107,12 @@ router.post("/signin", async (req, res) => {
       // jwt token
       const token = await userLogin.generateAuthToken();
 
-      res.cookie("jwttoken", token, {
+      res.cookie("jwtoken", token, {
         expires : new Date(Date.now()+25892000000),          // after 30 days
         httpOnly: true
       });
       
-      console.log(token);
+      //console.log(token);
 
       if(!isMatch){
         res.status(400).json({err: 'invalid pass'})
@@ -123,8 +124,32 @@ router.post("/signin", async (req, res) => {
      
     }
   } catch (err) {
-    console.log(err);
+    console.log("sign in error", err);
   }
 });
+
+
+
+
+
+
+// about me page .........................................................................
+
+
+router.get('/about', authenticate, (req, res) => {
+  // console.log(Authenticate.token)
+        res.send('hello world from server side');
+        res.send(req.rootUser)
+})
+
+
+
+// contact us page and home page to get data.........................................................................
+router.get('/getData', authenticate, (req, res) => {
+  // console.log(Authenticate.token)
+  res.send('hello world from server side');
+  res.send(req.rootUser)
+})
+
 
 module.exports = router;

@@ -1,7 +1,38 @@
-import React from 'react';
-import userImage from '../images/userImage.png'
+import React, {useEffect} from 'react';
+import userImage from '../images/userImage.png';
+import {useHistory} from 'react-router-dom';
 
 export default function About() {
+    const history = useHistory();
+
+    const callAboutPage = async () =>{
+        try{
+            const res = await fetch('/about', {           //this res is backend response , not from call back function
+                method: "GET",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json"
+                },
+                credentials: "include"
+            });
+            const data = await res.json();
+            console.log(data)
+            if(! res.status === 200){
+                const error = new Error(res.error);
+                console.log("contact page error from FE", error)
+                throw error;
+            }
+        }
+        catch(err){
+            console.log("error from fe:", err)
+            history.push('/signin');
+        }
+    };
+
+    useEffect(() => {
+      //  callAboutPage()
+    }, [])
+
     return (
         <div className="container cont " style={{ maxWidth: '700px', marginTop: '100px', marginBottom: '100px' }}>
             <div className="row py-3">
@@ -9,8 +40,8 @@ export default function About() {
                     <img src={userImage} className="img-fluid img-thumbnail" alt="user-img" style={{ maxWidth: '200px', height: 'auto' }} />
                 </div>
                 <div className=" col-md-6">
-                    <form>
-                        <h4>Anilraj</h4>
+                    <form method="GET"> 
+                        <h4>Iron man</h4>
                         <h5 style={{ color: 'blue', }}>Web developer</h5>
                         <h6 className="my-4">Rating : <span style={{ fontSize: '11px', fontWeight: 500 }}>4/5</span></h6>
                         <nav class="nav mt-5 " role="tablist">
@@ -53,7 +84,7 @@ export default function About() {
                                     <label>Name</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <p>ANIL RAJ </p>
+                                    <p>TONY </p>
                                 </div>
                             </div>
                             <div className="row ">
@@ -61,7 +92,7 @@ export default function About() {
                                     <label>Surname</label>
                                 </div>
                                 <div className="col-md-6">
-                                    <p>MEENA</p>
+                                    <p>STARK</p>
                                 </div>
                             </div>
                             <div className="row ">

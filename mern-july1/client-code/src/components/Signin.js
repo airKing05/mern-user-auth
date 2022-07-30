@@ -9,7 +9,6 @@ export default function SignIn() {
 
     const loginUser = async (e) => {
           e.preventDefault();
-
           const res = await fetch('/signin', {
                method: "POST",
                headers: {
@@ -20,9 +19,7 @@ export default function SignIn() {
                     password: password
                })
           });
-
           const data = await res.json();
-
           if(res.status === 400 || !data){
               window.alert("invalid login")
               console.log("invalid login")
@@ -30,7 +27,6 @@ export default function SignIn() {
           else{
               window.alert("login successfully")
               console.log("login successfully")
-
               history.push('/')
           }
     }
